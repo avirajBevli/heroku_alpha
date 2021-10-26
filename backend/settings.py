@@ -28,7 +28,10 @@ SECRET_KEY = 'f1cq@qdgv18f+5+iv^z#96yc4i3q44($&svqm$#lk4cq861vc$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False # manually changed for production (heroku deployment)
 
-ALLOWED_HOSTS = []
+# manually added the 3 hosts inside the links
+ALLOWED_HOSTS = ['https://alpha-portfolio-sols.herokuapp.com/',
+‘localhost’,
+‘127.0.0.1’]
 
 
 # Application definition
@@ -134,7 +137,7 @@ STATIC_URL = '/static/'
 
 
 
-STATIC_ROOT = os.path.join(BASE_DIR, "static"),
+#STATIC_ROOT = os.path.join(BASE_DIR, "static"),
 
 django_heroku.settings(locals())
 
