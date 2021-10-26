@@ -30,8 +30,8 @@ DEBUG = False # manually changed for production (heroku deployment)
 
 # manually added the 3 hosts inside the links
 ALLOWED_HOSTS = ['https://alpha-portfolio-sols.herokuapp.com/',
-‘localhost’,
-‘127.0.0.1’]
+'localhost',
+'127.0.0.1']
 
 
 # Application definition
