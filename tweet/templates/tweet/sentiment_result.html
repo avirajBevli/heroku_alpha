@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- <h1>Imported data successfully</h1>
+<p>50dma   : {{delta_sentiment.sent50d}} </p>
+<p>30dma   : {{delta_sentiment.sent30d}} </p>
+<p>Market Sentiment Change : {{delta_sentiment.mkt_curr_sent}} </p>
+ -->
+
+<form action="/input_portfolio/" method="post">
+    {% csrf_token %}
+    <h5>Perform portfolio optimization:</h5>
+    <input type="submit" value="input_portfolio" class="btn btn-primary">
+</form>
+
+</body>
+</html>

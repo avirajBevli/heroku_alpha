@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div class="col-sm-6" style="align-content: center;">
+    <form action="/result_portfolio/" method="post" style="width: 40vw;padding: 10px;margin: 10px;" class="card">
+        {% csrf_token %}
+        <h5><b>Asset selection baby!:</b></h5>
+        <div class="form-group" style="padding-left: 10vw;padding-right: 10vw;">
+            <label for="data">Select the Assets you wish to invest in:</label>
+            <select multiple class="form-control" id="data" name="data">
+                {% for asset in assets %}
+                    <option value="{{ asset.security_id }}">{{ asset.ticker_name }}</option>
+                {% endfor %}
+			</select>
+        </div>
+        <input type="submit" value="Submit" class="btn btn-primary">
+    </form>
+</div>
+</body>
+</html>
